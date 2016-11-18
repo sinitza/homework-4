@@ -30,7 +30,7 @@ body{
     min-width: 421px;
     margin: 0 auto;
     color: #093500;
-    font-family: HelveticaNeueLTPro-ThEx;
+    font-family: HelveticaNeueLTPro-ThEx, serif;
 }
 
 .header{
@@ -45,34 +45,23 @@ body{
     margin: 0;
     padding-top: 24px;
     padding-left: 35px;
-    font-family: HelveticaNeueLTPro-ThEx;
+    font-family: HelveticaNeueLTPro-ThEx, serif;
 }
 
-#bold{
-    font-family: HelveticaNeueLTPro-BdEx;
+.bold{
+    font-family: HelveticaNeueLTPro-BdEx, serif;
 }
 
 .menu ul {
     display: inline-flex;
-   /* list-style-image: url("images/icon_menu.png");*/
     font-size: 19px;
     list-style: none;
     padding: 0;
     float: left;
     position: relative;
-    font-family: MyriadProRegular;
+    font-family: MyriadProRegular, serif;
     margin: 28px 0 28px 0;
-
 }
-
-/*.menu ul li{
-    /*padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 30px;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-left: 30px;
-}*/
 
 .menu ul li:before {
     content: " ";
@@ -82,6 +71,7 @@ body{
     width: 9px;
     height: 9px;
     margin: 6px 20px 0 20px;
+    white-space: pre-wrap;
 }
 
 .menu ul li:first-child:before{
@@ -90,13 +80,18 @@ body{
     display: block;
     margin-left: 5px;
     list-style: none;
-    /*padding-right: 20px;
-    padding-right: 3%;
-    padding-left: 0px;*/
+}
+
+.menu ul li a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: #093500;
 }
 
 @media (max-width: 424px) {
-.menu ul{display:inline-block;}
+    .menu ul{
+        display:inline-block;
+    }
 }
 
 .pre_content{
@@ -108,9 +103,8 @@ body{
 
 .pre_content p{
     margin-top: 0;
-    font-family: MyriadProRegular;
+    font-family: MyriadProRegular, serif;
     line-height: 16px;
-
 }
 
 .pre_content p:last-child:after{
@@ -122,14 +116,14 @@ body{
     margin-top: 10px;
 }
 
-#title{
+.title{
     font-size: 32px;
     float: right;
     padding-bottom: 24px;
     padding-top: 39px;
     padding-right: 84px;
     margin: 0;
-    font-family: HelveticaNeueLTPro-ThEx;
+    font-family: HelveticaNeueLTPro-ThEx, serif;
 }
 
 .after_title{
@@ -139,15 +133,19 @@ body{
 }
 
 @media (max-width: 500px) {
-    #title{padding-right: 0px;}
-    .after_title{padding-right: 0px;}
+    .title{
+        padding-right: 0px;
+    }
+    .after_title{
+        padding-right: 0px;
+    }
 }
 
-#title_paragraph{
+.content p.par{
     font-size: 20px;
 }
 
-#paragraph_color{
+.paragraph_color{
     color: #80a60f;
     margin-bottom: 0;
 }
@@ -168,11 +166,11 @@ body{
     height: 100%;
 }
 
-#title_content{
+.title_content{
     font-size: 11px;
     padding-bottom: 25px;
     padding-left: 0;
-    font-family: MyriadProRegular;
+    font-family: MyriadProRegular, serif;
 }
 
 .left-colom{
@@ -186,7 +184,7 @@ body{
     margin-top: 0;
     font-size: 10px;
     margin-left: 28px;
-    font-family: MyriadProRegular;
+    font-family: MyriadProRegular, serif;
     line-height: 16px;
 }
 
@@ -202,7 +200,6 @@ body{
 .right-colom{
     width: 61%;
     float: right;
-    /*border-left: 1px solid red;*/
     padding-bottom: 10px;
 }
 
@@ -211,8 +208,10 @@ body{
         float: none;
         width: 100%;
         padding-top: 175px;
-        }
-    .left-colom{float: none;width: 100%}
+    }
+    .left-colom{float: none;
+        width: 100%
+    }
 }
 
 .right-colom > div {
@@ -230,7 +229,7 @@ body{
 .right-colom p{
     margin-top: 0;
     font-size: 10px;
-    font-family: MyriadProRegular;
+    font-family: MyriadProRegular, serif;
     line-height: 16px;
 }
 
@@ -242,7 +241,7 @@ img{
     height: auto;
 }
 
-#line_footer{
+.line_footer{
     height: 5px;
     background: #eeeefb;
     border: 0;
@@ -252,7 +251,7 @@ img{
 .footer{
     clear: both;
     font-size: 10px;
-    font-family: MyriadProRegular;
+    font-family: MyriadProRegular, serif;
     margin-top:20px;
     margin-left: 26px;
 }
